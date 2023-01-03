@@ -1,0 +1,95 @@
+.navBarBackground {
+    height: 6rem;
+    background-image: linear-gradient(90deg, #FF9344, #FF54D9);
+    padding: 0 3rem 0 2rem;
+}
+
+.navBarBrand {
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: auto;
+    color: white;
+}
+
+.navBarBrand:hover {
+    color: white;
+}
+
+.nav-list-item {
+    all: unset;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-list-item-1 {
+    all: unset;
+    color: white;
+    position: relative;
+}
+
+.nav-list-item:hover {
+    color: white;
+}
+
+.nav-list-item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.nav-list-item:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.nav-list-item-1:hover {
+    all: unset;
+    cursor: default;
+    color: white;
+}
+
+.nav-list-item-1:hover span {
+    float: right;
+    /* transform: none!important; */
+}
+
+.nav-icon-pad-right {
+    padding-right: 0.5rem;
+}
+
+.nav-icon-margin {
+    padding-left: 0.5rem;
+}
+.transform {
+    transform: none!important;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1rem;
+}
+
+.login_btn {
+    font-size: 1rem;
+    font-weight: 500;
+    background: white;
+    color: #FF9344;
+    border: 1px solid;
+    border-color: #FF9344;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+.login_btn:hover {
+    background-color: #FF9344;
+    color: white;
+}
